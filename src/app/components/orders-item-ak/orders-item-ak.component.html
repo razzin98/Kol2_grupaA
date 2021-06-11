@@ -1,0 +1,8 @@
+<div class="card-body">
+  <p class="card-text text-sm-center text-uppercase text-primary">Welcome in my blog!</p>
+</div>
+<div class="card-columns border-primary">
+  <div class="lead" *ngFor="let item of items$" >
+    <orders-item-ak [id]="item.id"  [title]="item.title" [text]="item.text" [image]="item.image"></orders-item-ak>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="card-body">
+  <p class="card-text text-sm-center text-uppercase text-primary">Welcome in my blog!</p>
+</div>
+<div class="card-columns border-primary">
+  <!--<div class="jumbotron lead" >-->
+  <div class="lead" *ngFor="let item of items$" >
+    <orders-item-ak [image]="item.image" [text]="item.text"></orders-item-ak>
+  </div>
+</div>
